@@ -93,17 +93,18 @@ export class Saved extends Component {
                     data={this.state.data}
                     extraData={this.state.data}
                     keyExtractor={(item) => item[0]}
+                    contentInset= {{bottom: 60}}
                     renderItem={({ item }) => (
 
 
                         <View style={styles.row}>
                             
-                            <View style={styles.textContainer}>
+                            {/* <View style={styles.textContainer}> */}
                                 <Text style={styles.text}>{item[1]}</Text>
-                            </View>
-                            <View style={styles.buttonContainer}>
-                                <Icon  name="delete" onPress={()  => this.deleteProverb(item[0])}></Icon>
-                            </View>
+                            {/* </View> */}
+                            {/* <View style={styles.buttonContainer}> */}
+                                <Icon  name="delete" style={styles.button} onPress={()  => this.deleteProverb(item[0])}></Icon>
+                            {/* </View> */}
                            
                         </View>
 
@@ -120,7 +121,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'aliceblue',
-        height: '100%'
+        height: '80%',
+        flex: 1
 
     },
 
@@ -140,52 +142,29 @@ const styles = StyleSheet.create({
     },
 
     row: {
-        flex: 1,
         flexDirection: "row",
-        paddingBottom: 25,
-        paddingTop: 10,
-        marginLeft: 15,
-        marginRight: 15,
         borderTopColor: "rgb(100, 100, 100)",
         borderTopWidth: 1,
-        
-
-    },
-
-    textContainer: {
-
         justifyContent: 'center',
-        flexDirection: 'row',
-        flexShrink: 1,
-        width: "80%"
-        
-      
-        // paddingHorizontal: 20,
-    
+        alignItems: 'center'
        
+        
 
     },
     
     text: {
-        textAlign: "left",
+        marginVertical: 10,
+        textAlign: "center",
         fontFamily: "Palatino",
         fontStyle: 'italic',
-        flexWrap: 'wrap',
-
-     
-       
-
-        
-        
-      
+        width: "85%",
+        paddingHorizontal: 10   
 
     },
 
-    buttonContainer: {
-        
-        justifyContent: 'center',
-        
-        
+    button: {
+        // marginRight: 18
+
     }
 
 })

@@ -299,8 +299,6 @@ export default class Home extends Component {
             </View>
 
 
-
-            
             <View style={styles.container}>
                   
               {this.state.isLoading ?
@@ -355,7 +353,7 @@ const styles = StyleSheet.create({
   titlespace: {
     justifyContent: 'center',
     alignItems: 'center',
-    height: 200
+    height: "35%"
   },
   title: {
     fontSize: 45,
