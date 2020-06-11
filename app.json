@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "Nav",
-    "slug": "Nav",
+    "name": "Proverbia",
+    "slug": "Proverbia",
+    
     "platforms": [
       "ios",
       "android",
@@ -15,6 +16,8 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "sdkVersion": "37.0.0",
+    "description": "An app that provides uplifting quotes for troubling times. Quotes are currated from a wide variety of humanity's leaders and religous texts.",
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -22,6 +25,8 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.sunilgreen.proverbia",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     }
   }

@@ -342,7 +342,7 @@ export default class Home extends Component {
 
            
            
-            </View>
+          </View>
           )
 
       }
@@ -368,12 +368,13 @@ const styles = StyleSheet.create({
   
     },
     quote: {
-      paddingHorizontal: 10,
+      paddingHorizontal: "2%",
       textAlign: "center",
       fontFamily: "Palatino",
       fontStyle: 'italic',
       fontSize: 20,
-      height: 140,
+      paddingBottom: "8%",
+      height: 180,
       flexGrow: 1,
       flex: 3,
       flexWrap: 'wrap'

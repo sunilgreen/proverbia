@@ -109,7 +109,9 @@ export class Saved extends Component {
                         </View>
 
                     )}
-                    />              
+                    />
+                    <View style={styles.buffer}>
+                    </View>              
             </View>
             
         )
@@ -153,18 +155,22 @@ const styles = StyleSheet.create({
     },
     
     text: {
-        marginVertical: 10,
+        marginVertical: "3%",
         textAlign: "center",
         fontFamily: "Palatino",
         fontStyle: 'italic',
         width: "85%",
-        paddingHorizontal: 10   
+        paddingHorizontal: "2%"   
 
     },
 
     button: {
         // marginRight: 18
 
+    },
+
+    buffer: {
+        height: "5%"
     }
 
 })
